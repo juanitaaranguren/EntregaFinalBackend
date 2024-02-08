@@ -4,9 +4,13 @@ import handlebars from "express-handlebars";
 import { createServer } from "http";
 import { Server } from "socket.io";
 
+
+
 const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer);
+const PORT = process.env.PORT || 8080;
+
 
 import productsRouter from "./routes/products.router.js";
 import cartsRouter from "./routes/carts.router.js";
