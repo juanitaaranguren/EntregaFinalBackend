@@ -1,0 +1,18 @@
+<form class="login-form" action="/api/sessions/login" method="post">
+  <h2 class="form-title">Iniciar sesión</h2>
+  <div class="form-group">
+    <label for="email" class="form-label">correo electrónico</label>
+    <input id="email" type="email" name="email" class="form-input" required>
+  </div>
+
+  <div class="form-group">
+    <label for="password" class="form-label">Contraseña</label>
+    <input id="password" type="password" name="password" class="form-input" required>
+  </div>
+
+  <button class="btn-submit" type="sudbmit">iniciar sesión</button>
+
+  <a href="/resetPass" class="forgot-password-link">recuperar contraseña</a>
+</form>
+
+<a href="/login-github" class="github-login-link">entrar con gitHub</a>

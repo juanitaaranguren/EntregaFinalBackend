@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi carrito de compras</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+
+  .contain-cart {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .contain-cart th,
+  .contain-cart td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .contain-cart th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .contain-cart td {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .flex-end {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .btn-session {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn-session:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<h2>Mi carrito de compras</h2>
+
+<table class="contain-cart">
+  <thead>
+    <tr>
+      <th>Imagen del producto</th>
+      <th>Título del producto</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody id="template-cart">
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="5">Total a pagar</td>
+      <td id="template-total"></td>
+    </tr>
+  </tfoot>
+</table>
+
+<div class="flex-end">
+  <button id="btn-purchase" class="btn-session">ir a ccomprar</button>
+</div>
+
+<script src="/static/js/cart-assets.js"></script>
+<script src="/static/js/cart.js"></script>
+
+</body>
+</html>
